@@ -73,20 +73,20 @@ module.exports = function(app) {
 
 
                 var eatsIcon = new google.maps.MarkerImage(
-                    "./images/food.png",
+                    "./images/Mosey_Eat.png",
                     null, /* size is determined at runtime */
                     null, /* origin is 0,0 */
                     null, /* anchor is bottom center of the scaled image */
-                    new google.maps.Size(40, 40)
+                    new google.maps.Size(20, 20)
                 );
 
 
                 var seeIcon = new google.maps.MarkerImage(
-                    "./images/tour.png",
+                    "./images/Mosey_Activities.png",
                     null, /* size is determined at runtime */
                     null, /* origin is 0,0 */
                     null, /* anchor is bottom center of the scaled image */
-                    new google.maps.Size(50, 50)
+                    new google.maps.Size(20, 20)
                 );
 
                 $scope.itin = [];
@@ -509,7 +509,7 @@ module.exports = function(app) {
                 });
             },
 
-            // Makes a call to the restaurants database
+            // Makes a call to the database
             getMarker: function(type) {
                 var promise = $http({
                     url: '/' + type,
